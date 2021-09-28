@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal">
+
+<com.google.android.material.card.MaterialCardView
+    android:elevation="10dp"
+    android:layout_marginTop="16dp"
+    android:layout_width="372dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:elevation="4dp"
+            android:id="@+id/layout_status"
+            android:background="@color/non_working_status"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+                <TextView android:id="@+id/tv_SensorID"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:text="4716"
+                    android:textSize="32sp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Updated: 64 days ago"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.914"
+                app:layout_constraintStart_toStartOf="@id/tv_SensorID"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:elevation="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/dialog_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Details"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.802"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.134"/>
+
+            <TextView
+                android:id="@+id/tv_villageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Toul Krous"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_communeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Khun Ream"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/tv_villageTitle"
+                app:layout_constraintTop_toBottomOf="@id/tv_villageTitle" />
+            <ImageButton
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/ic_expand_more_black_24dp"
+                android:id="@+id/expandAndClose_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout android:id="@+id/ll_for_cvDetails"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:background="@color/background_gray"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <TableLayout
+                android:padding="8dp"
+                android:weightSum="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow
+                    android:layout_weight="2"
+                    android:elevation="20dp"
+                    style="@style/TableRowForCard">
+                    <TextView
+                        android:textSize="14sp"
+                        android:text="Date"
+                        style="@style/DateTextColumn" />
+                    <TextView
+                        style="@style/StatusTextColumn"
+                        android:textSize="14sp"
+                        android:text="Status"
+                        />
+                    <TextView
+                        android:textSize="14sp"
+                        android:text="Comments"
+                        style="@style/CommentStyle" />
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    style="@style/TableRowForCard">
+                    <TextView
+                        android:textSize="14sp"
+                        android:text="11/20/19"
+                        style="@style/DateTextColumn"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="SUCCESSFUL"
+                        style="@style/StatusTextColumn"/>
+                    <TextView
+                        android:textSize="12sp"
+                        android:text="Something something something..."
+                        style="@style/CommentStyle"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    style="@style/TableRowForCard">
+                    <TextView
+                        android:textSize="14sp"
+                        android:text="11/20/19"
+                        style="@style/DateTextColumn"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="SUCCESSFUL"
+                        style="@style/StatusTextColumn"/>
+                    <TextView
+                        android:textSize="12sp"
+                        android:text="Something something something..."
+                        style="@style/CommentStyle"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    style="@style/TableRowForCard">
+                    <TextView
+                        android:textSize="14sp"
+                        android:text="11/20/19"
+                        style="@style/DateTextColumn"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="SUCCESSFUL"
+                        style="@style/StatusTextColumn"/>
+                    <TextView
+                        android:textSize="12sp"
+                        android:text="Something something something..."
+                        style="@style/CommentStyle"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    style="@style/TableRowForCard">
+                    <TextView
+                        android:textSize="14sp"
+                        android:text="11/20/19"
+                        style="@style/DateTextColumn"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="SUCCESSFUL"
+                        style="@style/StatusTextColumn"/>
+                    <TextView
+                        android:textSize="12sp"
+                        android:text="Something something something..."
+                        style="@style/CommentStyle"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    style="@style/TableRowForCard">
+                    <TextView
+                        android:textSize="14sp"
+                        android:text="11/20/19"
+                        style="@style/DateTextColumn"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="SUCCESSFUL"
+                        style="@style/StatusTextColumn"/>
+                    <TextView
+                        android:textSize="12sp"
+                        android:text="Something something something..."
+                        style="@style/CommentStyle"/>
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+</LinearLayout>

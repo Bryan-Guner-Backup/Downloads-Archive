@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">WellDoneMobile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="sign_in">Sign In</string>
+    <string name="more_details">More details</string>
+    <string name="location">Location</string>
+    <string name="data">Data</string>
+    <string name="total_upload">Total uploads</string>
+    <string name="total_liters">Total liters</string>
+    <string name="constructed">Constructed</string>
+    <string name="depth">Depth</string>
+    <string name="commune">Commune</string>
+    <string name="khun_ream">Khun Ream</string>
+    <string name="well_depth">Well depth</string>
+    <string name="province">Province</string>
+    <string name="view_pad_information">View pad information</string>
+    <string name="last_data_fetch">Last data fetch</string>
+    <string name="pump_num">Pump # %s</string>
+    <string name="well_depth_data">%s feet</string>
+    <string name="auth_login_failed">Login Failed!</string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="authentication_failed">Authentication Failed</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="mapbox_access_token">pk.eyJ1IjoiZ2Nnc2F1Y2UiLCJhIjoiY2s0ZmFmY2FtMDYwNDNvbnhmanc1dmt3diJ9.rGntj-5g7_2qb__5XYAmhQ</string>
+    <string name="view_details">View details</string>
+    <string name="directions">Directions</string>
+    <string name="view_logs">View logs</string>
+    <string name="logs">Logs</string>
+    <string name="add_a_log_entry">Add a log entry</string>
+    <string name="last_upload">Last upload</string>
+    <string name="october_13_2019">October 13, 2019</string>
+    <string name="well">Well</string>
+    <string name="district">District</string>
+    <string name="last_edited">Last\nedited</string>
+    <string name="date_filed">Date\nfiled</string>
+    <string name="status">Status</string>
+    <string name="comment">Comment</string>
+    <string name="pictures">Pictures</string>
+    <string name="sensor_id_dialog">Sensor #%1$d</string>
+    <string name="well_depth_dialog"> feet</string>
+    <string name="add_log">Add Log</string>
+    <string name="save">Save</string>
+</resources>
