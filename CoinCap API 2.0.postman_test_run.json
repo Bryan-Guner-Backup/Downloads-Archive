@@ -1,0 +1,21 @@
+{
+  "id": "058ae8fe-dc22-4287-b9e2-f21dd5a410f1",
+  "name": "CoinCap API 2.0",
+  "timestamp": "2021-09-23T13:49:53.039Z",
+  "collection_id": "13232440-a5671cb6-69a8-4bd9-bbf4-ccb6f7ea4e71",
+  "folder_id": "13232440-0fc13dd5-7437-4832-8803-2d4a88cf37b6",
+  "environment_id": "0",
+  "totalPass": 0,
+  "totalFail": 0,
+  "results": [],
+  "count": 114,
+  "totalTime": 0,
+  "collection": {
+    "requests": [
+      {
+        "id": "42b35566-4bcb-4ba5-a469-ef17562d7099",
+        "method": "GET"
+      }
+    ]
+  }
+}
